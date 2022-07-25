@@ -5,10 +5,10 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        return len(self.items)==0
+        return len(self.items) == 0
 
     def is_full(self):
-        return len(self.items)==size
+         return len(self.items) == size
 
     def push(self, data):
         if not self.is_full():
@@ -16,10 +16,11 @@ class Stack:
 
     def pop(self):
         if not self.is_empty():
-            self.itemspop()
+           self.items.pop()
 
     def status(self):
-        print(i)
+        for i in self.items:
+           print(i)       
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
