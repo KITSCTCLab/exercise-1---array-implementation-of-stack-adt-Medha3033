@@ -1,23 +1,24 @@
-import os
+ import os
 class Stack:
     def __init__(self, size):
         self.items = []
         self.size = size
-        
 
     def is_empty(self):
-       return len(self.items)==0
+        return len(self.items) == 0
 
     def is_full(self):
-       return len(self.items)==size
-        
+        return len(self.items) == self.size
+
     def push(self, data):
         if not self.is_full():
-           self.items.append(values[1])
-        
+            self.items.append(data)
+            self.size += 1
+
     def pop(self):
         if not self.is_empty():
             self.items.pop()
+            self.size -=1
 
     def status(self):
         for i in self.items:
