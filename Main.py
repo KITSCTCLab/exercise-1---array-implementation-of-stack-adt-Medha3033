@@ -3,7 +3,6 @@ class Stack:
         self.items = []
         self.size = size
         
-
     def is_empty(self):
        return len(self.items)==0
 
